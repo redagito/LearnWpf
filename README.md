@@ -13,6 +13,9 @@ Based on https://www.youtube.com/watch?v=umRSp4qB6Tw
 ## SharingData2
 Reimplementation of SharingData using MVVM Community Toolkit
 
+## ThemesTest
+Based on https://www.youtube.com/watch?v=Zr-pLUt9yEw
+
 # MVVM
 Basic principles
 * Model stores data and provides functions to manipulate the data
