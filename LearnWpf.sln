@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LearnWpf.NavigationTest2", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LearnWpf.SharingData", "LearnWpf.SharingData\LearnWpf.SharingData.csproj", "{E064B1F2-3082-4585-9F7F-DE9512EF736C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LearnWpf.SharingData2", "LearnWpf.SharingData2\LearnWpf.SharingData2.csproj", "{6185E94F-F51F-443E-8311-FF7849D1A30A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{E064B1F2-3082-4585-9F7F-DE9512EF736C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E064B1F2-3082-4585-9F7F-DE9512EF736C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E064B1F2-3082-4585-9F7F-DE9512EF736C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6185E94F-F51F-443E-8311-FF7849D1A30A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6185E94F-F51F-443E-8311-FF7849D1A30A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6185E94F-F51F-443E-8311-FF7849D1A30A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6185E94F-F51F-443E-8311-FF7849D1A30A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

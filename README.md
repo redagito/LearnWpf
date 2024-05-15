@@ -26,6 +26,8 @@ Basic principles
 * ViewModel references Model
 * ViewModel manipulates data either through functions in Model or additional layer
 * View references ViewModel
+* View does NOT implement business logic
+* View may implement logic ONLY when its purely for UI behavior
 * View binds to properties in view model
 * View calls commands exposed in ViewModel
 * View is notified of updates in ViewModel via INotifyPropertyChanged event

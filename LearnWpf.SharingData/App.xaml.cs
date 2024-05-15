@@ -1,8 +1,6 @@
 ﻿using LearnWpf.SharingData.MVVM.ViewModels;
 using LearnWpf.SharingData.Services;
 using Microsoft.Extensions.DependencyInjection;
-using System.Configuration;
-using System.Data;
 using System.Windows;
 
 namespace LearnWpf.SharingData
@@ -32,6 +30,7 @@ namespace LearnWpf.SharingData
         protected override void OnStartup(StartupEventArgs e)
         {
             var windowManager = _serviceProvider.GetRequiredService<IWindowManager>();
+            // TODO Should actually use ViewModelLocator service
             var mainViewModel = _serviceProvider.GetRequiredService<MainViewModel>();
 
             windowManager.ShowWindow(mainViewModel);
