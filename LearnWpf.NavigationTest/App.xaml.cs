@@ -3,8 +3,6 @@ using LearnWpf.NavigationTest.MVVM.ViewModels;
 using LearnWpf.NavigationTest.MVVM.Views;
 using LearnWpf.NavigationTest.Services;
 using Microsoft.Extensions.DependencyInjection;
-using System.Configuration;
-using System.Data;
 using System.Windows;
 
 namespace LearnWpf.NavigationTest
@@ -14,7 +12,7 @@ namespace LearnWpf.NavigationTest
     /// </summary>
     public partial class App : Application
     {
-        private ServiceProvider _serviceProvider;
+        private readonly ServiceProvider _serviceProvider;
 
         public App()
         {

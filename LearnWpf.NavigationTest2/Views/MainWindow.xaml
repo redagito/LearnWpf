@@ -6,7 +6,22 @@
         xmlns:local="clr-namespace:LearnWpf.NavigationTest2"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-
+    <Grid Margin="5">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="150" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        
+        <!-- Navigation side bar -->
+        <StackPanel Margin="5" Grid.Column="0">
+            <Button Content="Home" Command="{Binding NavigateHomeCommand}" />
+            <Button Content="Settings" Command="{Binding NavigateSettingsCommand}" Margin="0 5 0 0" />
+        </StackPanel>
+        
+        <!-- Active view -->
+        <Border Margin="5" Grid.Column="1">
+            <!-- View model associated to view via datatemplate -->
+            <UserControl Content="{Binding NavigationService.CurrentViewModel}" />
+        </Border>
     </Grid>
 </Window>
