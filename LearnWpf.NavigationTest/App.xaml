@@ -1,0 +1,16 @@
+﻿<Application x:Class="LearnWpf.NavigationTest.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:LearnWpf.NavigationTest"
+             xmlns:vm="clr-namespace:LearnWpf.NavigationTest.MVVM.ViewModels"
+             xmlns:v="clr-namespace:LearnWpf.NavigationTest.MVVM.Views">
+    <Application.Resources>
+        <DataTemplate DataType="{x:Type TypeName=vm:HomeViewModel}">
+            <v:HomeView />
+        </DataTemplate>
+
+        <DataTemplate DataType="{x:Type TypeName=vm:SettingsViewModel}">
+            <v:SettingsView />
+        </DataTemplate>
+    </Application.Resources>
+</Application>
