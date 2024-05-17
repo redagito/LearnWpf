@@ -21,7 +21,7 @@ class WindowManager : IWindowManager
     /// <param name="viewModel"></param>
     public void ShowWindow(ObservableObject viewModel)
     {
-        // Get the mapped winow type
+        // Get the mapped window type
         var type = _windowMapper.GetWindowTypeForViewModel(viewModel.GetType());
 
         // Create and set view model

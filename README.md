@@ -16,6 +16,9 @@ Reimplementation of SharingData using MVVM Community Toolkit
 ## ThemesTest
 Based on https://www.youtube.com/watch?v=Zr-pLUt9yEw
 
+## MessageTest
+Based on https://learn.microsoft.com/en-us/dotnet/communitytoolkit/mvvm/messenger
+
 # MVVM
 Basic principles
 * Model stores data and provides functions to manipulate the data
@@ -38,3 +41,6 @@ Basic principles
 # Resources
 Projects are based on several text and video tutorials
 * https://www.youtube.com/@_buffer/videos
+* https://web.archive.org/web/20090413205731/http://karlshifflett.wordpress.com/2008/11/08/learning-wpf-m-v-vm/
+* https://learn.microsoft.com/en-us/previous-versions/msp-n-p/hh848246(v=pandp.10)?redirectedfrom=MSDN
+* https://learn.microsoft.com/en-us/dotnet/communitytoolkit/mvvm/puttingthingstogether

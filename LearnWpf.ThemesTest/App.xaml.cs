@@ -2,7 +2,7 @@
 using System.Data;
 using System.Windows;
 
-namespace ThemesTest
+namespace LearnWpf.ThemesTest
 {
     /// <summary>
     /// Interaction logic for App.xaml

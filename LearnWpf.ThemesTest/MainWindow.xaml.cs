@@ -1,6 +1,6 @@
 ﻿using System.Windows;
 
-namespace ThemesTest
+namespace LearnWpf.ThemesTest
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
