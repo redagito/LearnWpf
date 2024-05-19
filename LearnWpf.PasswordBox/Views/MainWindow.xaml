@@ -24,7 +24,7 @@
         <!-- Login form -->
         <StackPanel Grid.Column="2" Margin="5">
             <TextBlock Text="Login" FontSize="24" />
-            
+
             <Label Content="Username" />
             <TextBox Text="{Binding UserName}" />
             
