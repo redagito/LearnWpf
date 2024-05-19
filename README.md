@@ -99,13 +99,13 @@ View
 Projects are based on several text and video tutorials
 * https://www.youtube.com/@_buffer/videos
 * https://www.youtube.com/playlist?list=PLrW43fNmjaQVYF4zgsD0oL9Iv6u23PI6M
-* https://web.archive.org/web/20090413205731/http://karlshifflett.wordpress.com/2008/11/08/learning-wpf-m-v-vm/
 * https://learn.microsoft.com/en-us/previous-versions/msp-n-p/hh848246(v=pandp.10)?redirectedfrom=MSDN
 * https://learn.microsoft.com/en-us/dotnet/communitytoolkit/mvvm/puttingthingstogether
+* https://learn.microsoft.com/en-us/ef/core/get-started/wpf
 * https://github.com/mysteryx93/Modern.Net-Tutorial/
 * https://github.com/mysteryx93/HanumanInstitute.MvvmDialogs
 * https://github.com/Carlos487/awesome-wpf
+* https://github.com/OpenSilver/SampleCRM
 * https://www.wpftutorial.net/Home.html
 * https://www.pluralsight.com/courses/wpf-mvvm-in-depth
-* https://github.com/OpenSilver/SampleCRM
-* https://learn.microsoft.com/en-us/ef/core/get-started/wpf
+* https://web.archive.org/web/20090413205731/http://karlshifflett.wordpress.com/2008/11/08/learning-wpf-m-v-vm/
