@@ -42,6 +42,11 @@ Wpf MVVM customer CRUD with EFCore
 
 Based on https://www.pluralsight.com/courses/wpf-mvvm-in-depth
 
+## LearnWpf.ViewModelAsyncDataTest
+Async load of data into viewmodel
+
+Based on https://github.com/CommunityToolkit/MVVM-Samples/issues/25
+
 # MVVM
 Basic principles
 * Model stores data and provides functions to manipulate the data
