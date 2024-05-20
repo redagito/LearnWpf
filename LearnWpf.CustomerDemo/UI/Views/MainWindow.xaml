@@ -9,7 +9,7 @@
     <Grid Margin="5">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="200" />
-            <ColumnDefinition Width="200" />
+            <ColumnDefinition Width="250" />
             <ColumnDefinition Width="200" />
             
         </Grid.ColumnDefinitions>
@@ -24,13 +24,14 @@
             <ListView Height="300" ItemsSource="{Binding Customers}" SelectedItem="{Binding SelectedCustomer}">
                 <ListView.View>
                     <GridView>
+                        <GridViewColumn Header="ID" DisplayMemberBinding="{Binding Id}" Width="50" />
                         <GridViewColumn Header="First Name" DisplayMemberBinding="{Binding FirstName}" Width="90" />
                         <GridViewColumn Header="Last Name" DisplayMemberBinding="{Binding LastName}" Width="90" />
                     </GridView>
                 </ListView.View>
             </ListView>
-            <Button Content="New" Margin="0 5 0 0" Width="100" HorizontalAlignment="Left" />
-            <Button Content="Delete" Margin="0 5 0 0" Width="100" HorizontalAlignment="Left" />
+            <Button Content="New" Margin="0 5 0 0" Width="100" HorizontalAlignment="Left" Command="{Binding NewCustomerCommand}" />
+            <Button Content="Delete" Margin="0 5 0 0" Width="100" HorizontalAlignment="Left" Command="{Binding DeleteCustomerCommand}" />
         </StackPanel>
         
         <!-- Single customer and actions -->
