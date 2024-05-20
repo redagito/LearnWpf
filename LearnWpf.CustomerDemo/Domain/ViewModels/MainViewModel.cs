@@ -15,7 +15,16 @@ namespace LearnWpf.CustomerDemo.Domain.ViewModels
 
         [ObservableProperty]
         [NotifyCanExecuteChangedFor(nameof(DeleteCustomerCommand))]
+        [NotifyCanExecuteChangedFor(nameof(SaveCustomerCommand))]
         private Customer? _selectedCustomer = null;
+
+        [RelayCommand(CanExecute = nameof(UpdateDeleteCustomerCanExecute))]
+        private async Task SaveCustomerAsync(CancellationToken cancellationToken)
+        {
+            if (SelectedCustomer == null) return;
+            await _customerRepository.UpdateCustomerAsync(SelectedCustomer, cancellationToken);
+            await ReloadCustomersAsync(cancellationToken);
+        }
 
         /// <summary>
         /// Creates new customer, reloads customer list and sets currently selected customer to newly created customer
@@ -26,22 +35,22 @@ namespace LearnWpf.CustomerDemo.Domain.ViewModels
         private async Task NewCustomerAsync(CancellationToken cancellationToken)
         {
             var customer = await _customerRepository.CreateCustomerAsync(new Customer(), cancellationToken);
-            await ReloadCustomers(cancellationToken);
+            await ReloadCustomersAsync(cancellationToken);
             SelectedCustomer = customer;
         }
 
-        private bool DeleteCustomerCanExecute() => SelectedCustomer != null;
+        private bool UpdateDeleteCustomerCanExecute() => SelectedCustomer != null;
 
-        [RelayCommand(CanExecute = nameof(DeleteCustomerCanExecute))]
+        [RelayCommand(CanExecute = nameof(UpdateDeleteCustomerCanExecute))]
         private async Task DeleteCustomerAsync(CancellationToken cancellationToken) 
         {
             if (SelectedCustomer == null) return;
 
             await _customerRepository.DeleteCustomerAsync(SelectedCustomer.Id, cancellationToken);
-            await ReloadCustomers(cancellationToken);
+            await ReloadCustomersAsync(cancellationToken);
         }
 
-        private async Task ReloadCustomers(CancellationToken cancellationToken)
+        private async Task ReloadCustomersAsync(CancellationToken cancellationToken)
         {
             Customers = new ObservableCollection<Customer>(await _customerRepository.GetCustomersAsync(cancellationToken));
         }
